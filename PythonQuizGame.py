@@ -42,9 +42,20 @@ for question in questions:
     question_num += 1 #Question Number will inclement in order to proceed to the next question.
 
 #Print Summary of the Quiz
+
+print("*******************************\n\nQUIZ SUMMARY\n")
+print("[ANSWERS] ", end="")
+for answers in answer:
+    print(answers, end=" ")
+
+print("\n[GUESSES] ", end="")
+for guess in guesses:
+    print(guess, end=" ")
+
 totalscore += score
-print(f"\nTHANK YOU TAKING THE QUIZ\n*******************************\nYOUR TOTAL SCORE IS {totalscore}/{question_num}\n*******************************")
+percentage = int(score / len(questions) * 100)
+print(f"\n\nTHANK YOU FOR TAKING THE QUIZ\nYOUR TOTAL SCORE IS {totalscore}/{question_num} = {percentage}%\n\n*******************************")
 if totalscore <= 3:
-    print("\n[NOTE]PRACTICE MORE\n")
+    print("\n[NOTE] PRACTICE MORE\n")
 else:
-    print("\n[NOTE]YOU ARE GREAT!\n")
+    print("\n[NOTE] YOU ARE GREAT!\n")

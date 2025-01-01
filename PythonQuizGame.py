@@ -39,7 +39,7 @@ for question in questions:
         print("\n")
         print(f"INCORRECT ANSWER! - {answer[question_num]} is the CORRECT ANSWER")
         print("\n")
-    question_num += 1 #Question Number will inclement in order to proceed to the next question.
+    question_num += 1 #Question Number will increment in order to proceed to the next question.
 
 #Print Summary of the Quiz
 

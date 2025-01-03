@@ -44,7 +44,7 @@ for question in questions:
 #Print Summary of the Quiz
 
 print("*******************************\n\nQUIZ SUMMARY\n")
-print("[ANSWERS] ", end="")
+print("[CORRECT ANSWERS] ", end="")
 for answers in answer:
     print(answers, end=" ")
 
